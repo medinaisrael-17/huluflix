@@ -1,12 +1,15 @@
 // nav bar changes color on scroll 
 window.onscroll = () => {
+
+    //this if statement will check to see if the scroll is greater than 50px
     if (document.body.scrollTop > 50
         ||
         document.documentElement.scrollTop > 50) {
-        //set the new id
+        //set the new id of the styled nav
         try {
             this.document.getElementById("myNav").setAttribute("id", "myNavScroll")
         }
+        //if it errors out don't display it
         catch (e) {
             return;
         }
@@ -17,6 +20,7 @@ window.onscroll = () => {
         try {
             this.document.getElementById("myNavScroll").setAttribute("id", "myNav")
         }
+        //same 
         catch (e) {
             return;
         }
@@ -43,11 +47,13 @@ window.addEventListener("resize", function () {
 
 //when hovering over a show 
 $(".show").on("mouseenter", function (e) {
-    // console.log($(this).children("div"));
+    //show the play button / fav button 
     $(this).children("div").css("display", "block");
 })
 
+//when not hovering over a show
 $(".show").on("mouseleave", function (e) {
+    //don't show the play/fav button
     $(this).children("div").css("display", "none");
 })
 

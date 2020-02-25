@@ -1,0 +1,338 @@
+/* General  */
+
+body {
+    /* overflow-x: hidden; */
+}
+
+/* Top */
+#top {
+    margin-bottom: 30px;
+    height: 650px;
+    background-image: url(https://images.unsplash.com/photo-1481456384069-0effc539ab7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: 100%;
+}
+
+
+#myNav {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    /* background: linear-gradient(to bottom, #000000, rgba(255,0,0,0));  */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 89%);
+    z-index: 1;
+}
+
+#myNavScroll {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    background: black;
+    z-index: 1;
+}
+ 
+.navbar-brand {
+    font-size: 20px;
+    color: #edecec;
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand:hover {
+    color: #176de3;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 15px;
+}
+
+#username {
+    margin-right: 1%;
+    color: white;
+}
+
+#profileImage {
+    border-radius: 50%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+/* Below Nav */
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(234,185,9,1) 0%, rgba(239,198,7,1) 7%, rgba(245,212,4,1) 20%, rgba(248,218,3,1) 26%, rgba(255,236,0,0) 79%);
+}
+
+#herocaption {
+    width: 40%;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    z-index: 0;
+}
+
+.start {
+    cursor: pointer;
+}
+
+/* Inner Content */
+
+.rowCaption {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.outerRow {
+    overflow-x: scroll;
+    width: 100%;
+}
+.myRows {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+    display: flex;
+    width: 120%;
+    /* width: calc(100% + 80px); */
+    height: 7.5em;
+}
+ 
+.show {
+    flex-shrink: 1;
+    position: relative;
+    top: 5px;
+    width: 15%;
+    height: 120px;
+    margin-right: .25% !important;
+    transition: height 1s, width 1s, top 1s;
+    transition-delay: .5s;
+}
+
+.show:hover {
+    height: 135px;   
+    width: 17%;
+    top: -3px;
+}
+
+.showTitle {
+    font-size: 23px;
+    margin: 0 !important;
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    color: white;
+    left: 8px;
+    top: 5px;
+    cursor: pointer;
+    text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
+}
+
+.playButton {
+    position:absolute;
+    left: 10px;
+    bottom: 35px;
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    height: 10%;
+    width: 10%;
+    color: yellow;
+    text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
+}
+
+.favButton {
+    position:absolute;
+    left: 50px;
+    bottom: 35px;
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    height: 10%;
+    width: 10%;
+    color: yellow;
+    text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
+}
+
+
+
+.showimg {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Jumbotron 3 */
+
+#myJumbotron3 {
+    color: grey;
+    background-color: black;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    padding-left: 48px;
+    padding-top: 48px;
+}
+
+.listTitle {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.listItem {
+    margin-bottom: 2px;
+}
+
+.formTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formItem {
+    margin-bottom: 15px;
+}
+
+
+.blockItem {
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.iconContainer {
+    margin-top: 40px;
+    font-size: 30px;
+
+}
+
+.myIcon {
+    margin-right: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1293px) {
+    #top {
+    background-size: 90%;
+    background-position-x: 165%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #top {
+    background-size: 95%;
+    background-position-x: 225%;
+    }
+}
+
+@media only screen and (max-width: 1018px) {
+    #top {
+    background-size: 110%;
+    background-position-x: -105%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #navbarNav {
+     background: black;
+     margin-top: 30px;
+     padding: 10px;
+     }
+    
+ }
+
+@media only screen and (max-width: 882px) {
+    #top {
+        background-size: 115%;
+        background-position-x: -75%;
+    }
+    #myNav {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    #top {
+        background-size: 120%;
+        background-position-x: -45%;
+    }
+
+    #herocaption {
+        top: 20%;
+        left: 3%;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    #top {
+        background-size: 140%;
+        background-position-x: 5%;
+    }
+
+    #top, #myNav, .outerRow, #myJumbotron3 {
+        width: 121vw;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    #top, #myNav, .outerRow, #myJumbotron3 {
+    width: 130vw;
+    }
+}
+
+@media only screen and (max-width: 607px) {
+    #top, #myNav, .outerRow, #myJumbotron3 {
+        width: 145vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #top {
+        height: 745px;
+    }
+
+    #top, #myNav, .outerRow, #myJumbotron3 {
+        width: 200vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #top {
+        height: 815px;
+    }
+
+    #top, #myNav, .outerRow, #myJumbotron3 {
+        width: 235vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #top {
+        height: 823px;
+    }
+
+    #top, #myNav, .outerRow, #myJumbotron3 {
+        width: 275vw;
+    }
+}
